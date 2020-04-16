@@ -2,7 +2,7 @@
 // @name         Study Time
 // @namespace    solucinator.com
 // @homepageURL  http://solucinator.com
-// @version      0.01
+// @version      0.02
 // @description  Block a list of site
 // @author       alex
 // @match        *://*.youtube.com/*
@@ -15,7 +15,7 @@
 // ==/UserScript==
 console.log(document.domain);
 var sTime = moment().format('HH');
-if(sTime >= 10 && sTime <= 18){
+if(sTime >= 14 && sTime <= 18){
   document.location = "https://google.com";
   console.log(">>>>>>>>>>>>> current hour", sTime);
 }
